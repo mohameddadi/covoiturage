@@ -4,12 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
  * Created by Dadi on 18/03/2017.
  */
 @Entity
-public class Accounts {
+public class Accounts implements Serializable {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)

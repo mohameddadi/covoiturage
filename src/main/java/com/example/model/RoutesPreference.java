@@ -1,13 +1,14 @@
 package com.example.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Dadi on 18/03/2017.
  */
 @Entity
-public class RoutesPreference {
+public class RoutesPreference implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
